@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "request_id": {
+      "type": "string"
+    },
+    "success": {
+      "type": "boolean"
+    },
+    "response_code": {
+      "type": "integer"
+    },
+    "message": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "user_exists": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "user_exists"
+      ]
+    }
+  },
+  "required": [
+    "request_id",
+    "success",
+    "response_code",
+    "message",
+    "data"
+  ]
+}

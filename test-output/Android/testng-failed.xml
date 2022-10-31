@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Android]" guice-stage="DEVELOPMENT">
+  <parameter name="runModule" value="Suite"/>
+  <parameter name="userType" value="Guest"/>
+  <parameter name="runMode" value="Suites"/>
+  <listeners>
+    <listener class-name="com.extent.ExtentReporter"/>
+  </listeners>
+  <test thread-count="1" name="RingPay(failed)">
+    <parameter name="date" value="10"/>
+    <parameter name="Year2" value="1998"/>
+    <parameter name="Year1" value="2005"/>
+    <parameter name="LessThanSixDigitOTP" value="12345"/>
+    <parameter name="CVV" value="123"/>
+    <parameter name="year" value="1966"/>
+    <parameter name="Gender" value="male"/>
+    <parameter name="MerchantID" value="rpy.ipmerchant1234191702@icici"/>
+    <parameter name="Valid_MobileNumber" value="9731239214"/>
+    <parameter name="year1" value="2005"/>
+    <parameter name="year2" value="1998"/>
+    <parameter name="Date" value="10"/>
+    <parameter name="withinLimitAmount" value="1"/>
+    <parameter name="Space_MobileNumber" value="8124 4"/>
+    <parameter name="Month" value="Feb"/>
+    <parameter name="Year" value="1966"/>
+    <parameter name="MoreThanTenDigits_MobileNumber" value="98863277656"/>
+    <parameter name="InvalidOTP" value="123123"/>
+    <parameter name="exceedAmount" value="5000"/>
+    <parameter name="SpecialCharacters_MobileNumber" value="8124,4"/>
+    <parameter name="EditValid_MobileNumber" value="8123267268"/>
+    <parameter name="LessThanTenDigits_MobileNumber" value="8124569"/>
+    <parameter name="key" value="greaterthanequalto18 || lessthanequalto55"/>
+    <classes>
+      <class name="com.RingPay.TestScripts.RingPayTestScripts">
+        <methods>
+          <include name="Before"/>
+          <include name="merchantFlow"/>
+          <include name="User_Playstore_Flow" invocation-numbers="0"/>
+          <include name="userRegistrationFlow" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.RingPay.TestScripts.RingPayTestScripts -->
+    </classes>
+  </test> <!-- RingPay(failed) -->
+</suite> <!-- Failed suite [Android] -->

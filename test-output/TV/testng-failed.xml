@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [TV]" guice-stage="DEVELOPMENT">
+  <parameter name="testExecutionKey" value="TC-21175"/>
+  <parameter name="runModule" value="Suite"/>
+  <parameter name="userType" value="Guest"/>
+  <parameter name="runMode" value="Suites"/>
+  <parameter name="url" value="https://newpwa.zee5.com/"/>
+  <parameter name="browserType" value="chrome"/>
+  <listeners>
+    <listener class-name="com.extent.ExtentReporter"/>
+  </listeners>
+  <test thread-count="1" name="MLwallet(failed)">
+    <classes>
+      <class name="com.VootKidsScripts.VootKidsScripts">
+        <methods>
+          <include name="Login"/>
+          <include name="MLwalletapplaunch"/>
+          <include name="Before"/>
+          <include name="sendMoney"/>
+        </methods>
+      </class> <!-- com.VootKidsScripts.VootKidsScripts -->
+    </classes>
+  </test> <!-- MLwallet(failed) -->
+</suite> <!-- Failed suite [TV] -->
